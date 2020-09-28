@@ -20,8 +20,8 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #22cfe6;
+    color: rgb(214, 20, 20);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
