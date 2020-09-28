@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .a
+        {
+            width:250px;
+            height:250px;
+        }
+@media (min-width: 1200px)
+{
+    .col-lg-3
+    {
+        width:17%;
+        float : left;
+        padding: 2%;
+        margin:2%;
+        text-align: center;
+    }   
+}
+@media (min-width:701px) and (max-width:1199px)
+{
+    .col-md-2
+    {
+        width:42%;
+        float: left;
+        padding: 2%;
+        margin:2%;
+        text-align: center;
+    }
+} 
+@media (max-width:700px)
+{
+    .col-md-2
+    {
+        width:92%;
+        float: left;
+        margin:10px;
+        padding: 2%;
+        margin:2%;
+        text-align: center;
+    }
+} 
+.row:after
+{
+display: block;
+content: "";
+clear: both;
+}
+h2
+{
+    font-family: 'Epilogue', sans-serif;
+}
+h4
+{
+    font-family: 'Montserrat', sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class='col-lg-3 col-md-2'><img src="./images/img5.png" alt="" ><h2>Aws cloud</h2><h4>Price:2400/month</h4></div>
+        <div class='col-lg-3 col-md-2'><img src="./images/img2.png" alt="" ><h2>Google cloud</h2><h4>Price:2700/month</h4></div>
+        <div class='col-lg-3 col-md-2'><img src="./images/img3.png" alt="" ><h2>Azure cloud</h2><h4>Price:2900/month</h4></div>
+        <div class='col-lg-3 col-md-2'><img src="./images/img4.png" alt="" ><h2>Ibm cloud</h2><h4>Price:2800/month</h4></div>
+        
+    </div>
+</body>
+</html>
