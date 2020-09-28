@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <title>Visitor Count</title>
+</head>
+<body style="background-color: #51d0de ; color: #bf4aa8">
+    <div style="text-align: center; margin-top:17%;">
+    <h1 >Visitor Counter</h1><br>
+    <h4>number of Viewers</h4>
+    <p class="ans" style="font-size : 50px; color:white">00</p>
+    <h4>Viewer's ip address</h4>
+    <br>
+    <p class="ans1" style="font-size: 36px;">your ip here</p>
+</div>
+    <script>
+        function updateCounter()
+        {
+            ele=document.querySelector(".ans");
+           fetch('https://api.countapi.xyz/update/assignment1/ass1/?amount=1')
+            .then(res => res.json())
+            .then(data => ele.innerHTML=data.value);
+        }
+        function updateCounter1()
+        {
+            ele1=document.querySelector(".ans1");
+           fetch('https://api.ipify.org/?format=json')
+            .then(res => res.json())
+            .then(data => ele1.innerHTML=data.ip);
+        }
+        updateCounter();
+        updateCounter1();
+    </script>
+    
+</body>
+
+    </html>
