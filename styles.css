@@ -1,0 +1,40 @@
+.logo
+{
+    width: 150px;
+    height: 80px;
+}
+.btn
+{
+    margin:10px;
+}
+.row
+{
+    margin:20px;
+    margin-bottom: 0px;
+}
+
+@media (min-width:700px)
+{
+    .t1
+    {
+        margin:6%;
+        width:88%;
+    }
+}
+@media (min-width:701px) and (max-width : 1800px)
+{
+.t1
+{
+    width: 38%;
+    margin:6%;
+    float: left;
+}
+}
+.insidet
+{
+    margin-top: 50px;
+}
+.img2
+{
+    width:70%;
+}
