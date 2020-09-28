@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            width:250px;
+            height:250px;
+        }
+@media (min-width: 1200px)
+{
+    .col-lg-3
+    {
+        width:17%;
+        float : left;
+        padding: 2%;
+        margin:2%;
+    }   
+}
+@media (min-width:701px) and (max-width:1199px)
+{
+    .col-md-2
+    {
+        width:25.33%;
+        float: left;
+        padding: 2%;
+        margin:2%;
+    }
+} 
+@media (max-width:700px)
+{
+    .col-md-2
+    {
+        width:42%;
+        float: left;
+        margin:10px;
+        padding: 2%;
+        margin:2%;
+    }
+} 
+.row:after
+{
+display: block;
+content: "";
+clear: both;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <img src="./images/img1.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img2.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img3.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img4.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img5.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img6.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img7.png" alt="" class='a col-lg-3 col-md-2'>
+        <img src="./images/img8.png" alt="" class='a col-lg-3 col-md-2'>
+    </div>
+</body>
+</html>
